@@ -8,7 +8,7 @@ import (
 
 type Calc struct {}
 
-func (calc) Operate(inputUno string, inputDos string, operator string) int {
+func (Calc) Operate(inputUno string, inputDos string, operator string) int {
 	operadorUno := parseInt(inputUno)
 	operadorDos := parseInt(inputDos)
 
