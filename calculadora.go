@@ -26,7 +26,7 @@ func (Calc) Operate(inputUno string, inputDos string, operator string) int {
 	}
 }
 
-func ParseInt(input string) int {
+func parseInt(input string) int {
 	operador, _ := strconv.Atoi(input)
 	return operador
 }
