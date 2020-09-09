@@ -6,9 +6,9 @@ import (
 	"strconv"
 )
 
-type calc struct {}
+type Calc struct {}
 
-func (calc) operate(inputUno string, inputDos string, operator string) int {
+func (calc) Operate(inputUno string, inputDos string, operator string) int {
 	operadorUno := parseInt(inputUno)
 	operadorDos := parseInt(inputDos)
 
@@ -26,12 +26,12 @@ func (calc) operate(inputUno string, inputDos string, operator string) int {
 	}
 }
 
-func parseInt(input string) int {
+func ParseInt(input string) int {
 	operador, _ := strconv.Atoi(input)
 	return operador
 }
 
-func readInput() string {
+func ReadInput() string {
 	scanner := bufio.NewScanner(os.Stdin)
 	scanner.Scan()
 	return scanner.Text()
